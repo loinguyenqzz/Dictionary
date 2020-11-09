@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="home" prefHeight="452.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <left>
+      <AnchorPane prefHeight="490.0" prefWidth="189.0" style="-fx-background-color: #38044B;" BorderPane.alignment="CENTER">
+         <Pane layoutX="-4.0" prefHeight="86.0" prefWidth="219.0" style="-fx-background-color: #006666;">
+            <children>
+               <Label alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="1.0" prefHeight="85.0" prefWidth="214.0" text="DICTIONARY" textFill="#103936" textOverrun="CLIP">
+                  <font>
+                     <Font name="Book Antiqua Bold" size="25.0" />
+                  </font>
+               </Label>
+            </children>
+         </Pane>
+         <VBox layoutX="-5.0" layoutY="84.0" prefHeight="368.0" prefWidth="222.0" style="-fx-background-color: #336666;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="84.0">
+            <JFXButton alignment="BASELINE_LEFT" blendMode="MULTIPLY" onMouseClicked="#search" prefHeight="60.0" prefWidth="225.0" text="Tra từ">
+               <graphic>
+                  <FontAwesomeIcon glyphName="SEARCH" wrappingWidth="31.371414184570312" />
+               </graphic>
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" blendMode="MULTIPLY" onMouseClicked="#edit" prefHeight="60.0" prefWidth="224.0" text="Sửa từ vựng">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="EDIT" size="30" wrappingWidth="33.80004811286926" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" blendMode="MULTIPLY" onMouseClicked="#add" prefHeight="60.0" prefWidth="233.0" text="Thêm từ vựng">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="PLUS" size="30" wrappingWidth="30.214284896850586" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" blendMode="MULTIPLY" onMouseClicked="#delete" prefHeight="60.0" prefWidth="231.0" text="Xóa từ vựng">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="TRASH" size="30" wrappingWidth="26.214284896850586" />
+               </graphic>
+            </JFXButton>
+         </VBox>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="displayNavi" prefHeight="470.0" prefWidth="500.0" style="-fx-background-color: #778899;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="123.0" layoutY="159.0" prefHeight="134.0" prefWidth="253.0" text="WELCOM">
+               <font>
+                  <Font name="Bell MT" size="48.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

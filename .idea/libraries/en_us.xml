@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="en_us">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/freetts-1.2/lib/en_us.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/freetts-1.2/lib/freetts-jsapi10.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/freetts-1.2/lib/freetts.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

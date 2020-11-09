@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="500.0" style="-fx-background-color: #778899;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerSearch">
+   <children>
+      <JFXTextField fx:id="searchEnglish" layoutY="70.0" onAction="#getWord" onKeyPressed="#showList" prefHeight="44.0" prefWidth="222.0" promptText="Nhập vào đây">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextArea fx:id="displayTranslate" editable="false" layoutX="226.0" layoutY="78.0" prefHeight="394.0" prefWidth="274.0" promptText="Phiên dịch" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextArea>
+      <JFXListView fx:id="listSuggest" blendMode="MULTIPLY" layoutY="121.0" onMouseClicked="#selectList" prefHeight="351.0" prefWidth="222.0" style="-fx-background-color: #778899;" />
+      <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="182.0" layoutY="78.0" onAction="#readText" text=" ">
+         <graphic>
+            <FontAwesomeIcon fill="#8a5353" glyphName="BULLHORN" size="20" text="" wrappingWidth="24.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </FontAwesomeIcon>
+         </graphic></JFXButton>
+      <Pane blendMode="COLOR_BURN" prefHeight="60.0" prefWidth="500.0" style="-fx-background-color: #C0C0C0;">
+         <effect>
+            <Glow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
